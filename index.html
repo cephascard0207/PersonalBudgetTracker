@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Budget Tracker</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .button-hover:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .icon-hover:hover {
+            color: #4fd1c5;
+        }
+
+        .icon-bg {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white py-6 shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-indigo-600">Budget Tracker</a>
+            <div>
+                <a href="#features" class="text-gray-600 hover:text-indigo-600 mx-4">Features</a>
+                <a href="#team" class="text-gray-600 hover:text-indigo-600 mx-4">Team</a>
+                <a href="#faq" class="text-gray-600 hover:text-indigo-600 mx-4">FAQ</a>
+                <a href="#download" class="text-white bg-indigo-600 px-6 py-2 rounded-full hover:bg-indigo-500 button-hover">Download Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen gradient-bg text-white flex items-center justify-center text-center">
+        <div>
+            <h1 class="text-6xl font-extrabold mb-4">Take Control of Your Finances</h1>
+            <p class="text-2xl mb-8">A smart, intuitive way to track your income, expenses, and savings.</p>
+            <a href="#download" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold button-hover hover:bg-gray-200">Download Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white text-gray-700">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-10">Features</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-indigo-600 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-wallet"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4">Income Tracking</h3>
+                    <p>Keep a record of all your income streams and track your earnings with ease.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-green-500 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-money-check-alt"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4">Expense Management</h3>
+                    <p>Monitor your expenses and get insights into where your money goes.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-purple-500 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-piggy-bank"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4">Savings Goals</h3>
+                    <p>Set goals, track savings, and work towards your financial freedom.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-yellow-500 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-chart-pie"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4">Budget Summary</h3>
+                    <p>View your total income, expenses, and balance all in one place.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-pink-500 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-file-alt"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4">Simple Reports</h3>
+                    <p>Generate detailed reports to get a clear understanding of your finances.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-blue-500 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-save"></i></div>
+                    <h3 class="text-2xl font-semibold mb-4">Data Storage</h3>
+                    <p>Securely save your data for future reference, ensuring it’s always available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-6">Manage Your Finances Like a Pro</h2>
+            <p class="text-xl mb-8">Download the Personal Budget Tracker and start taking control today!</p>
+            <a href="https://github.com/cephascard0207/PersonalBudgetTracker" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold button-hover hover:bg-gray-200">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-10">Meet the Team</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div>
+                    <img src="https://via.placeholder.com/150" alt="Team Member 1" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Member 1</h3>
+                    <p>User Authentication</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150" alt="Team Member 2" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Member 2</h3>
+                    <p>Income Input</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150" alt="Team Member 3" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Member 3</h3>
+                    <p>Expense Management</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150" alt="Team Member 4" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Member 4</h3>
+                    <p>Savings Goals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white text-gray-700">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-extrabold mb-10 text-center">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">How does the app store my data?</h3>
+                    <p>Your data is securely stored in a text file, ensuring it persists across sessions.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Is this app free to use?</h3>
+                    <p>Yes, the Personal Budget Tracker is completely free and open-source.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Can I track multiple incomes and expenses?</h3>
+                    <p>Absolutely! The app allows you to track various streams of income and categorize expenses.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">How can I contribute to this project?</h3>
+                    <p>You can visit the GitHub repository and contribute to the project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Personal Budget Tracker | Open Source | Non-Profit</p>
+            <a href="https://github.com/cephascard0207/PersonalBudgetTracker" target="_blank" class="text-indigo-400 hover:text-white icon-hover"><i class="fab fa-github text-xl"></i> GitHub</a>
+        </div>
+    </footer>
+
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
