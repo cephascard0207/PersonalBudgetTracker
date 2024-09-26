@@ -13,7 +13,7 @@
         body {
             font-family: 'Outfit', sans-serif;
         }
-
+        
         .gradient-bg {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
@@ -22,22 +22,22 @@
             transform: scale(1.05);
             transition: transform 0.3s ease;
         }
-
+        
         .icon-hover:hover {
             color: #4fd1c5;
         }
-
+        
         .icon-bg {
             background-color: rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
 <body class="bg-gray-50">
-
+    
     <!-- Navbar -->
     <nav class="bg-white py-6 shadow-md fixed w-full z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold text-indigo-600">Budget Tracker</a>
+            <a href="#" class="text-3xl font-bold text-indigo-600">Personal Budget Tracker</a>
             <div>
                 <a href="#features" class="text-gray-600 hover:text-indigo-600 mx-4">Features</a>
                 <a href="#team" class="text-gray-600 hover:text-indigo-600 mx-4">Team</a>
@@ -46,54 +46,52 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Hero Section -->
     <section class="h-screen gradient-bg text-white flex items-center justify-center text-center">
         <div>
             <h1 class="text-6xl font-extrabold mb-4">Take Control of Your Finances</h1>
             <p class="text-2xl mb-8">A smart, intuitive way to track your income, expenses, and savings.</p>
-            <a href="#download" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold button-hover hover:bg-gray-200">Download Now</a>
+            <a href="exe_py/app.exe" download class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold button-hover hover:bg-gray-200">Download Now</a>
         </div>
     </section>
-
+    
     <!-- Features Section -->
-    <section id="features" class="py-20 bg-white text-gray-700">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-extrabold mb-10">Features</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-indigo-600 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-wallet"></i></div>
-                    <h3 class="text-2xl font-semibold mb-4">Income Tracking</h3>
-                    <p>Keep a record of all your income streams and track your earnings with ease.</p>
+ <!-- Features Section -->
+<section id="features" class="py-20 bg-white text-gray-700">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-extrabold mb-10">Features</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Feature Card 1: Income Tracking -->
+            <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="text-indigo-600 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto">
+                    <i class="fas fa-wallet"></i> <!-- Wallet icon for Income Tracking -->
                 </div>
-                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-green-500 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-money-check-alt"></i></div>
-                    <h3 class="text-2xl font-semibold mb-4">Expense Management</h3>
-                    <p>Monitor your expenses and get insights into where your money goes.</p>
+                <h3 class="text-2xl font-semibold mb-4">Income Tracking</h3>
+                <p>Keep a record of all your income streams and track your earnings with ease.</p>
+            </div>
+
+            <!-- Feature Card 2: Expense Tracking -->
+            <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="text-indigo-600 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto">
+                    <i class="fas fa-chart-line"></i> <!-- Line chart icon for Expense Tracking -->
                 </div>
-                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-purple-500 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-piggy-bank"></i></div>
-                    <h3 class="text-2xl font-semibold mb-4">Savings Goals</h3>
-                    <p>Set goals, track savings, and work towards your financial freedom.</p>
+                <h3 class="text-2xl font-semibold mb-4">Expense Tracking</h3>
+                <p>Monitor your spending habits and categorize expenses efficiently.</p>
+            </div>
+
+            <!-- Feature Card 3: Savings Goals -->
+            <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="text-indigo-600 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto">
+                    <i class="fas fa-piggy-bank"></i> <!-- Piggy bank icon for Savings Goals -->
                 </div>
-                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-yellow-500 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-chart-pie"></i></div>
-                    <h3 class="text-2xl font-semibold mb-4">Budget Summary</h3>
-                    <p>View your total income, expenses, and balance all in one place.</p>
-                </div>
-                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-pink-500 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-file-alt"></i></div>
-                    <h3 class="text-2xl font-semibold mb-4">Simple Reports</h3>
-                    <p>Generate detailed reports to get a clear understanding of your finances.</p>
-                </div>
-                <div class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-blue-500 text-5xl mb-4 icon-bg p-4 rounded-full mx-auto"><i class="fas fa-save"></i></div>
-                    <h3 class="text-2xl font-semibold mb-4">Data Storage</h3>
-                    <p>Securely save your data for future reference, ensuring it’s always available.</p>
-                </div>
+                <h3 class="text-2xl font-semibold mb-4">Savings Goals</h3>
+                <p>Set, track, and reach your savings goals with detailed insights.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- CTA Section -->
     <section class="py-20 gradient-bg text-white text-center">
@@ -106,31 +104,45 @@
 
     <!-- Team Section -->
     <section id="team" class="py-20 bg-gray-100">
-        <div class="container mx-auto text-center">
+        <div class="container mx-auto text-center"><center>
             <h2 class="text-4xl font-extrabold mb-10">Meet the Team</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-                <div>
-                    <img src="images/afiya.png" alt="Team Member 1" class="rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-bold">Afiya Shaikh</h3>
-                </div>
-                <div>
-                    <img src="images/owais.png" alt="Team Member 2" class="rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-bold">Mohammad Owais</h3>
-                </div>
                 <div>
                     <img src="images/chrison.png" alt="Team Member 3" class="rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-bold">Chrison</h3>
                 </div>
                 <div>
-                    <img src="images/tiana.png" alt="Team Member 4" class="rounded-full mx-auto mb-4">
-                    <h3 class="text-xl font-bold">Tiana Teles</h3>
-                </div>
-                <div></div>
                     <img src="images/cephas.png" alt="Team Member 4" class="rounded-full mx-auto mb-4">
                     <h3 class="text-xl font-bold">Cephas Cardozo</h3>
                 </div>
+                <div>
+                    <img src="images/owais.png" alt="Team Member 4" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Mohammad Owais</h3>
+                </div>
+                <div>
+                    <img src="images/silveston.png" alt="Team Member 4" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Silveston Lobo</h3>
+                </div>
             </div>
-        </div>
+            <br><br>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          
+                <div>
+                    <img src="images/afia.png" alt="Team Member 2" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Afia Shaikh</h3>
+                </div>
+                <div>
+                    <img src="images/tiana.png" alt="Team Member 4" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Tiana Teles</h3>
+                </div>
+                <div>
+                    <img src="images/swati.png" alt="Team Member 2" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Swati Jalgar</h3>
+                </div>
+            
+            </div>
+        </div></center>
     </section>
 
     <!-- FAQ Section -->
