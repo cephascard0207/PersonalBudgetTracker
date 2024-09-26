@@ -1,9 +1,12 @@
 # Personal Budget Tracker -> v1.0
 # Python Console App
 # Tech Stack > PYTHON, GIT, GITHUB
-# By GRP 1 > Afiya Chrissy Tiana Chrison Silveston Owais Cephas
+# By GRP 1 > Afiya Swati Tiana Chrison Silveston Owais Cephas
 
 #------------------->
+
+#CEPHAS CODED FROM HERE -------------------------------------------------------------------------------------------
+
 #import module
 import os
 
@@ -50,6 +53,10 @@ def load_transaction_data(username):
                     })
     return transactions
 
+# -------------------------------------------------------------------------------------------
+
+
+# SWATI & AFIA CODED FROM HERE -------------------------------------------------------------------------------------------
 # --- User Registration/Login Functions ---
 
 # User registration
@@ -86,6 +93,8 @@ def login(user_data):
         print("Invalid username or password. Please try again.\n")
         return None
 
+
+
 # --- Budget Management Functions ---
 
 # Add cash to the account
@@ -108,6 +117,9 @@ def remove_cash(username):
     save_transaction_data(username, 'remove', amount, 'You', receiver, date)
     print(f"${amount} removed from your account. Sent to {receiver} on {date}.\n")
 
+# -------------------------------------------------------------------------------------------
+
+# TIANA CODED FROM HERE -------------------------------------------------------------------------------------------
 # View budget summary
 def view_summary(username):
     print("\n--- Budget Summary ---")
@@ -139,6 +151,9 @@ def view_summary(username):
     print("--- Cash Outflow Graph (Money Removed) ---")
     show_bar_graph(outflow, 'outflow')
 
+# -------------------------------------------------------------------------------------------
+
+# SWATI CODED HERE -------------------------------------------------------------------------------------------
 # Show simple bar graph
 def show_bar_graph(data, label):
     if not data:
@@ -147,6 +162,7 @@ def show_bar_graph(data, label):
         for i, amount in enumerate(data, 1):
             bars = '█' * int(amount / 100)  # For each $100, add a block
             print(f"{i}: ${amount} | {bars}")
+
 
 # Main menu for logged-in users
 def user_menu(username):
@@ -168,7 +184,9 @@ def user_menu(username):
             break
         else:
             print("Invalid option. Please try again.")
+# -------------------------------------------------------------------------------------------
 
+# CHRISON CODED HERE -------------------------------------------------------------------------------------------
 # --- Main Application ---
 
 def main():
@@ -200,3 +218,5 @@ def main():
 # Run the main function
 if __name__ == "__main__":
     main()
+# -------------------------------------------------------------------------------------------
+#END OF PROGRAM
